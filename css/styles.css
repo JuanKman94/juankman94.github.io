@@ -19,6 +19,13 @@ body {
   --box-shadow-color: rgba(206, 178, 252, 0.48);
 }
 
+.html5-audioplayer {
+  --bg-color: #4a148c;
+  --bg-color-light: #7b1fa2;
+  --text-color: #00e676;
+  --box-shadow-color: rgba(106, 27, 154, 0.48);
+}
+
 .my-finances {
   --bg-color: #21ba45;
   --bg-color-light: #b8f9d3;
