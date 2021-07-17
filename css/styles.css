@@ -86,20 +86,39 @@ a:visited {
 }
 
 .my-finances {
-  --bg-color: #21ba45;
-  --bg-color-light: #b8f9d3;
+  --bg-color: var(--green);
+  --bg-color-light: var(--green-1);
   --text-color: #fff;
   --box-shadow-color: rgba(184, 249, 211, 0.48);
+}
+.my-finances a, .my-finances a:visited {
+}
+
+.finances {
+  --bg-color: var(--green);
+  --bg-color-light: var(--green-1);
+  --text-color: var(--white);
+  --box-shadow-color: var(--green-1);
+}
+
+.mylist {
+  --bg-color: var(--blue);
+  --bg-color-light: var(--blue-1);
+  --text-color: var(--white);
+  --box-shadow-color: var(--blue-1);
 }
 
 .repo-card {
   flex: 1 1;
   display: flex;
   max-width: 30%;
+  min-width: 30%;
   flex-flow: column nowrap;
+  margin: 1rem 0.5rem;
+
   box-shadow: 0 0.5rem 0.5rem var(--bg-color-light);
   border: 1px solid var(--bg-color);
-  border-radius: 2px 2px 6px 6px;
+  border-radius: 6px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
@@ -123,13 +142,12 @@ a:visited {
 .repo-card .image {
   order: 1;
   text-align: center;
-  background-color: #eee;
+  background-color: transparent;
 }
 
 .repo-card .image img {
   max-height: 250px;
   max-width: 100%;
-  border-radius: 2px 2px 0 0;
 }
 
 .repo-card .actions {
@@ -149,10 +167,6 @@ a:visited {
   color: var(--text-color);
   font-weight: 600;
   text-decoration: none;
-}
-
-.repo-card:last-child {
-  border-radius: 0 0 6px 6px;
 }
 
 /*********** media queries **********/
